@@ -1,312 +1,572 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG" />
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta
+      property="og:description"
+      content="SOCIAL MEDIA DESCRIPTION TAG TAG"
+    />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG" />
+    <meta
+      name="twitter:description"
+      content="TWITTER BANNER DESCRIPTION META TAG"
+    />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta
+      name="twitter:image"
+      content="static/images/your_twitter_banner_image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Sportify: Question Answering with Embedded Visualizations and Personified
+      Narratives for Sports Video
+    </title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="static/css/index.css" />
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
-<body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Sportify: Question Answering with Embedded Visualizations and
+                Personified Narratives for Sports Video
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  <a href="https://chungyi347.github.io/" target="_blank"
+                    >Chunggi Lee</a
+                  >
+                  <sup>1</sup>
+                  ,
+                </span>
+                <span class="author-block">
+                  <a href="https://ticalin.com/" target="_blank">Tica Lin</a>
+                  <sup>1</sup>
+                  ,
+                </span>
+                <span class="author-block">
+                  <a href="https://vcg.seas.harvard.edu/people" target="_blank"
+                    >Hanspeter Pfister</a
+                  >
+                  <sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://chenzhutian.org/" target="_blank"
+                    >Chen Zhu-Tian</a
+                  >
+                  <sup>2</sup>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"
+                  ><sup>1</sup>Harvard University, <sup>2</sup>University of
+                  Minnesota<br />IEEE VIS 2024</span
+                >
+                <!-- <span class="eql-cntrb"
+                  ><small
+                    ><br /><sup>*</sup>Indicates Equal Contribution</small
+                  ></span
+                > -->
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2408.05123.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
                   </span>
-                  </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+                  <!-- Supplementary PDF link -->
+                  <!-- <span class="link-block">
+                    <a
+                      href="static/pdfs/supplementary_material.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <a
+                      href="https://github.com/YOUR REPO HERE"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (Coming Soom)</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/YOUR REPO HERE"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Demo (Coming Soom)</span>
+                    </a>
+                  </span>
+
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2408.05123"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+    <!-- Teaser video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="static/videos/vis_ff.mp4" type="video/mp4" />
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <span style="font-weight: bold"
+              >Sportify explains tactic questions in each clip for everyone,
+              aiming to engage users and foster a love for sports.
+            </span>
+            We integrate embedded visualization and personified narratives
+            generated by large language model (LLM) to elucidate a complex
+            series of actions through action detection, tactic classifier, and
+            LLM pipelines.
+          </h2>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
+    <!-- End teaser video -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                As basketball’s popularity surges, fans often find themselves
+                confused and overwhelmed by the rapid game pace and complexity.
+                Basketball tactics, involving a complex series of actions,
+                require substantial knowledge to be fully understood. This
+                complexity leads to a need for additional information and
+                explanation, which can distract fans from the game. To tackle
+                these challenges,
+                <span style="font-weight: bold"
+                  >we present Sportify, a Visual Question Answering system that
+                  integrates narratives and embedded visualization for
+                  demystifying basketball tactical questions</span
+                >, aiding fans in understanding various game aspects. We propose
+                <span style="font-weight: bold"
+                  >three novel action visualizations (i.e., Pass, Cut, and
+                  Screen) to demonstrate critical action sequences.</span
+                >
+                To explain the reasoning and logic behind players’ actions, we
+                leverage a large-language model (LLM) to generate narratives. We
+                adopt a
+                <span style="font-weight: bold"
+                  >storytelling approach for complex scenarios from both first
+                  and third-person perspectives, integrating action
+                  visualizations.</span
+                >
+                We evaluated Sportify with basketball fans to investigate its
+                impact on understanding of tactics, and how different personal
+                perspectives of narratives impact the understanding of complex
+                tactic with action visualizations. Our evaluation with
+                basketball fans demonstrates Sportify’s capability to deepen
+                tactical insights and amplify the viewing experience.
+                <span style="font-weight: bold"
+                  >Furthermore, third-person narration assists people in getting
+                  in-depth game explanations while first-person narration
+                  enhances fans’ game engagement.
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+    </section>
+    <!-- End paper abstract -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <section class="section hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <h2 class="title is-3">Sportify Example Answers</h2>
+          </div>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-video1">
+              <video
+                poster=""
+                id="video1"
+                autoplay
+                controls
+                muted
+                loop
+                height="100%"
+              >
+                <!-- Your video file here -->
+                <source src="static/videos/carousel1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="item item-video2">
+              <video
+                poster=""
+                id="video2"
+                autoplay
+                controls
+                muted
+                loop
+                height="100%"
+              >
+                <!-- Your video file here -->
+                <source src="static/videos/carousel2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="item item-video3">
+              <video
+                poster=""
+                id="video3"
+                autoplay
+                controls
+                muted
+                loop
+                height="100%"
+              >
+                \
+                <!-- Your video file here -->
+                <source src="static/videos/carousel3.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <section class="section hero is-small is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Design Considerations</h2>
+            <video
+              poster=""
+              id="tree"
+              autoplay
+              controls
+              muted
+              loop
+              height="100%"
+            >
+              <!-- Your video here -->
+              <source
+                src="static/videos/design_considerations.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="content has-text-justified">
+              <p>
+                <span style="font-weight: bold"
+                  >R1. Reliable – Explaining Tactics with Grounded Video Data. </span
+                >To ensure accuracy in QA systems analyzing video content,
+                explanations must be closely aligned with the actual video data.
+                This involves extracting tactical information and actions from
+                the video, ensuring explanations are verifiable and precise to
+                enhance user understanding and prevent confusion.
+              </p>
+              <p>
+                <span style="font-weight: bold"
+                  >R2. Understandable - Explaining Tactics with
+                  Narratives.</span
+                >
+                Narratives helps users comprehend team tactics. Different
+                narrative perspectives, such as first or third person, can
+                enhance the viewer's understanding and immersion.
+              </p>
+              <p>
+                <span style="font-weight: bold"
+                  >R3. Engaging – Explaining Tactics using Embedded
+                  Visualizations.</span
+                >
+                Embedding visualizations within the video enhances the
+                explanation of tactics by connecting actions to visual
+                representations. The visualizations should be designed to align
+                with the narrative perspective (first-person or third-person) to
+                create a cohesive and engaging experience for the user.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">The Pipeline of Sportify</h2>
+            <div class="content has-text-justified">
+              <video
+                poster=""
+                id="tree"
+                autoplay
+                controls
+                muted
+                loop
+                height="100%"
+              >
+                <!-- Your video here -->
+                <source src="static/videos/system.mp4" type="video/mp4" />
+              </video>
+              <p>
+                Based on the considerations, we have developed Sportify, a
+                visual QA system answering questions about videos and comprising
+                <span style="font-weight: bold"
+                  >three major components: a Data Processor (A), a Narrative
+                  Agent (B), and a Visualizer (C).</span
+                >
+                At the heart of Sportify lies the Narrative Agent, which
+                leverages a LLM to interpret the user’s question and generate
+                explanations in response. For a system designed for basketball
+                videos, the capability to understand video content is
+                indispensable. Although multi-modal LLMs are capable of
+                processing image data, they often underperform in
+                domain-specific tasks and require a tremendous computation
+                costs, such as detecting actions or tactics from a sports video.
+                To overcome this challenge, our methodology employs a text-only
+                LLM, enriched through the integration of a Retrieval-Augmented
+                Generation (RAG) framework and a Reasoning-and-Actioning (ReAct)
+                prompting strategy for different types of questions.
+                Importantly, Sportify leverages the data extracted from the
+                video as the context (R1) to generate the explanation in a
+                narrative format (R2). These extracted data and explanation are
+                then presented as visualizations embedded in the video (R3). In
+                the subsequent sections, we delve into the specific design and
+                implementation of each component.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">prompts</h2>
+            <div class="content has-text-justified">
+              <img src="static/images/prompts.png" alt="MY ALT TEXT" />
+              <p>caption</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Design Iterations</h2>
+            <div class="content has-text-justified">
+              <img src="static/images/design_iteration.png" alt="MY ALT TEXT" />
+              <p>
+                The iteration design process to design action visualizations
+                (i.e., Pass, Cut, and Screen). From P1 to P4,
+                <span style="font-weight: bold"
+                  >we remove the occlusion and highlight the two players who
+                  send and receive the ball.</span
+                >
+                For the cut, we indicate the exact location that a player will
+                move with flash-forward animation from C1 to C2, while the
+                screen demonstrate a wall to be easily identified a player set
+                on screen from S1 to S2.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">
+              Third-person and First-person perspectives
+            </h2>
+            <div class="content has-text-justified">
+              <img src="static/images/perspective.png" alt="MY ALT TEXT" />
+              <p>
+                The figure (A) shows the third-person perspective narrative like
+                commentaries, whereas the figure (B) demonstrates the
+                <span style="font-weight: bold"
+                  >first-person perspective by integrating the action
+                  visualizations and narratives around the players </span
+                >to make people more engaged and immersive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Results</h2>
+            <div class="content has-text-justified">
+              <img src="static/images/result1.png" alt="MY ALT TEXT" />
+              <p>
+                A task 1 user study results. Figure (a) reveals that the First
+                person perspective ranks highest in helpfulness and confidence
+                across three conditions. Figure (b) indicates positive
+                participant ratings for each embedded visualization’s
+                helpfulness. Figure (c) compares usability across two different
+                narrative perspectives.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <img src="static/images/result2.png" alt="MY ALT TEXT" />
+              <p>
+                Sportify received better results compared to existing tactical
+                explanation videos, with positive outcomes in all questionnaire
+                of usability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{lee2024sportify,
+    title={Sportify: Question Answering with Embedded Visualizations and Personified Narratives for Sports Video},
+    author={Lee, Chunggi and Lin, Tica and Pfister, Hanspeter and Zhu-Tian, Chen},
+    journal={IEEE Transactions on Visualization and Computer Graphics},
+    year={2024},
+    publisher={IEEE}
+}</code></pre>
+      </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the
+                <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank"
+                  >Academic Project Page Template</a
+                >
+                which was adopted from the <a
+                  href="https://nerfies.github.io"
+                  target="_blank"
+                  >Nerfies</a
+                > project page. You are free to borrow the source code of this
+                website, we just ask that you link back to this page in the
+                footer. <br />
+                This website is licensed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  target="_blank"
+                  >Creative Commons Attribution-ShareAlike 4.0 International
+                  License</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
-
   </body>
-  </html>
+</html>
